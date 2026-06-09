@@ -31,8 +31,8 @@ Aby uruchomić projekt w środowisku lokalnym (deweloperskim), należy postępow
 ### 2. Pobranie projektu
 Skopiuj projekt z repozytorium do wybranego folderu na swoim komputerze:
 ```bash
-git clone https://github.com/Szymon/Projekt-FitnessApp-Szymon.git
-cd Projekt-FitnessApp-Szymon/WebApplication1
+git clone link do repozytorium
+cd nazwa folderu/WebApplication1
 ```
 ### 3. Konfiguracja połączenia z bazą danych
 W pliku `appsettings.json` (lub `appsettings.Development.json`) sprawdź wartość klucza `ConnectionStrings`. Domyślnie ciąg połączenia powinien wskazywać na Twoją lokalną instancję bazy danych SQL Server:
