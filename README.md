@@ -1,7 +1,26 @@
 # Projekt-FitnessApp-Szymon
 Aplikacja webowa ASP.NET Core stworzona z myślą o kompleksowym zarządzaniu siłownią, treningami oraz dietą.
 ---
+## Wykorzystane technologie i biblioteki
 
+| Technologia / biblioteka | Wersja | Zastosowanie |
+| --- | --- | --- |
+| .NET | 8.0 | Platforma uruchomieniowa aplikacji |
+| ASP.NET Core Razor Pages | 8.0 | Warstwa webowa i widoki aplikacji |
+| ASP.NET Core Identity | 8.* | Logowanie, rejestracja, role i konta uzytkownikow |
+| Microsoft.AspNetCore.Identity.EntityFrameworkCore | 8.* | Integracja Identity z Entity Framework Core |
+| Microsoft.AspNetCore.Identity.UI | 8.* | Gotowe elementy UI dla Identity |
+| Entity Framework Core | 8.* | ORM i migracje bazy danych |
+| Microsoft.EntityFrameworkCore.SqlServer | 8.0.27 | Provider SQL Server dla EF Core |
+| Microsoft.EntityFrameworkCore.Tools | 8.0.27 | Narzedzia migracji EF Core |
+| Microsoft.EntityFrameworkCore.Design | 8.* | Obsluga projektowania i migracji EF Core |
+| Microsoft.VisualStudio.Web.CodeGeneration.Design | 8.* | Narzedzia scaffoldingu |
+| SQL Server | 2022 latest | Baza danych aplikacji |
+| Bootstrap | lokalnie w `wwwroot/lib` | Style i komponenty interfejsu |
+| jQuery | lokalnie w `wwwroot/lib` | Skrypty pomocnicze w widokach |
+| jQuery Validation | lokalnie w `wwwroot/lib` | Walidacja formularzy |
+| Docker Compose | wersja systemowa | Uruchomienie lokalnej bazy SQL Server |
+| Open-Meteo API | zewnetrzne API | Dane pogodowe dla treningu w plenerze | 
 ## Instrukcja instalacji i konfiguracji projektu
 Aby uruchomić projekt w środowisku lokalnym (deweloperskim), należy postępować zgodnie z poniższymi krokami:
 ### 1. Wymagania wstępne
