@@ -1,28 +1,8 @@
 # Projekt-FitnessApp-Szymon
 Aplikacja webowa ASP.NET Core stworzona z myślą o kompleksowym zarządzaniu siłownią, treningami oraz dietą.
 ---
-## 📖 Dokumentacja Projektu
-### 1. Opis Projektu
-**Projekt-FitnessApp-Szymon** to kompleksowa aplikacja internetowa stworzona z myślą o osobach trenujących oraz zarządzających klubami fitness. Aplikacja została zrealizowana w oparciu o architekturę wielowarstwową z wykorzystaniem nowoczesnego frameworka **ASP.NET Core (wersja .NET 8.0)**, a za warstwę dostępu do danych oraz mapowanie obiektowo-relacyjne (ORM) odpowiada **Entity Framework Core** we współpracy z bazą danych Microsoft SQL Server.
-Głównym celem systemu jest automatyzacja oraz ułatwienie zarządzania treningami, planami dietetycznymi, grafikami zajęć grupowych, jak również asortymentem i zamówieniami dla klientów siłowni. Dzięki wbudowanemu systemowi uwierzytelniania opartemu o **ASP.NET Core Identity**, aplikacja dba o bezpieczeństwo i integralność danych każdego użytkownika, oferując dedykowane panele dla poszczególnych ról.
-### 2. Opis Zrealizowanych Funkcjonalności
-W ramach projektu wdrożono szeroki wachlarz modułów, które pokrywają najważniejsze aspekty funkcjonowania centrum fitness. Kluczowe zrealizowane funkcjonalności to:
-* **Autoryzacja i Profile Użytkowników:** Rejestracja, logowanie oraz zarządzanie kontem za pomocą Identity. Aplikacja przechowuje profile użytkowników wraz z ich przypisaniami (`UserFitnessAssignment`) i pozwala na śledzenie wskaźników fizycznych.
-* **Zarządzanie Treningami:** Baza ćwiczeń i maszyn, podział na partie mięśniowe oraz sekcje. Użytkownik ma możliwość układania planów treningowych i przypisywania do nich poszczególnych pozycji planu i sesji (`TrainingSession`).
-* **Zarządzanie Dietą:** System pozwala na tworzenie pełnych jadłospisów i diet, organizowanych według dni (`DietPlanDay`) oraz posiłków (`Meal`), w tym zarządzanie produktami i wartościami odżywczymi.
-* **Zajęcia Fitness i Harmonogramy:** Tworzenie grafików zajęć (`ClassSchedule`) i konkretnych wydarzeń (`ClassEvent`), co ułatwia zarządzanie rezerwacjami i harmonogramem trenerów.
-* **Śledzenie Postępów:** Moduł wprowadzania parametrów treningowych i sylwetkowych (`ProgressEntry`) w czasie, pozwalający na wizualizację efektów i modyfikację celów na bieżąco.
-* **Sklep / Zamówienia:** Realizacja e-commerce dla suplementów lub karnetów, umożliwiająca przeglądanie produktów (`Product`), składanie zamówień (`Order`) oraz tworzenie pozycji zamówień (`OrderItem`).
----
-## ⚙️ Wykorzystane biblioteki i technologie
-Projekt został oparty o framework **.NET 8.0** oraz **ASP.NET Core**. W projekcie wykorzystano następujące pakiety NuGet (wraz z ich wersjami):
-- **Microsoft.AspNetCore.Identity.EntityFrameworkCore** (wersja `8.*`) - Dostarcza mechanizmy autoryzacji i uwierzytelniania w oparciu o Entity Framework Core (np. rejestracja, logowanie użytkowników, role).
-- **Microsoft.AspNetCore.Identity.UI** (wersja `8.*`) - Domyślne interfejsy i widoki dla systemu Identity (gotowe strony logowania, rejestracji i zarządzania kontem).
-- **Microsoft.EntityFrameworkCore.SqlServer** (wersja `8.0.27`) - Provider Entity Framework Core dla bazy danych Microsoft SQL Server, umożliwiający komunikację z bazą relacyjną.
-- **Microsoft.EntityFrameworkCore.Design** (wersja `8.*`) oraz **Microsoft.EntityFrameworkCore.Tools** (wersja `8.0.27`) - Narzędzia wspierające tworzenie i aplikowanie migracji bazy danych (np. komendy `Add-Migration`, `Update-Database`).
-- **Microsoft.VisualStudio.Web.CodeGeneration.Design** (wersja `8.*`) - Narzędzie wspierające scaffolding (automatyczne generowanie kodu kontrolerów i widoków).
----
-## 🚀 Instrukcja instalacji i konfiguracji projektu
+
+## Instrukcja instalacji i konfiguracji projektu
 Aby uruchomić projekt w środowisku lokalnym (deweloperskim), należy postępować zgodnie z poniższymi krokami:
 ### 1. Wymagania wstępne
 - Zainstalowany **.NET 8.0 SDK**.
